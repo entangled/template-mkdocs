@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "entangled-env"
+version = "0.1.0"
+description = "Virtual env for running entangled and building docs."
+authors = ["Johan Hidding <j.hidding@esciencecenter.nl>"]
+license = "Apache 2"
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.11"
+entangled-cli = "^2.0.0b2"
+mkdocs-entangled-plugin = "^0.3.0"
+mkdocs = "^1.5.2"
+mkdocs-material = "^9.2.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
