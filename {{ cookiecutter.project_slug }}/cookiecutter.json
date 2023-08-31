@@ -1,6 +1,0 @@
-{
-        "project_name": "Entangled Mkdocs",
-        "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-        "author": "Johan Hidding"
-}
-
