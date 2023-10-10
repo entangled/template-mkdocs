@@ -9,11 +9,10 @@ packages = []
 
 [tool.poetry.dependencies]
 python = "^3.11"
-entangled-cli = "^2.0.0b2"
+entangled-cli = "^2.0.0b5"
 mkdocs-entangled-plugin = "^0.3.0"
 mkdocs = "^1.5.2"
 mkdocs-material = "^9.2.6"
-
 
 [build-system]
 requires = ["poetry-core"]
