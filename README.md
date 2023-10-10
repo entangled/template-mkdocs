@@ -1,20 +1,17 @@
-# My Entangled Project
-[![Entangled badge](https://img.shields.io/badge/entangled-Use%20the%20source!-%2300aeff)](https://entangled.github.io/)
+# template-mkdocs
 
-## First time running
-You need Python >= 3.11 and [Poetry](https://python-poetry.org/) installed.
+Template for Entangled/MkDocs project
 
-```shell
-poetry install
-```
+See [entangled.github.io](https://entangled.github.io) for more information on Entangled.
 
-### Steps to reproduce
-
-Follow the [Entangled MkDocs plugin setup instructions](https://entangled.github.io/mkdocs-plugin/setup/).
-
-## Run
+To use, run
 
 ```
-poetry run mkdocs serve
+cookiecutter gh:entangled/template-mkdocs
 ```
 
+Open the README in the generated project for further instructions.
+
+## License
+
+Apache v2, see LICENSE.

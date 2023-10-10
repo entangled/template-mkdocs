@@ -1,3 +1,12 @@
+_subdirectory: template
+
+_tasks:
+    - "git init"
+    - "poetry install"
+
+_message_after_copy: |
+    Your Entangled project has been generated.
+
 project_name:
     type: str
     help: What is your project name?
