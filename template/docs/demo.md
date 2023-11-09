@@ -26,6 +26,7 @@ You can create figures using the Brei workflow system that's embedded in Entangl
 #| description: Plot Delaunay triangulation
 #| creates: docs/fig/delaunay.svg
 #| collect: figures
+from pathlib import Path
 from matplotlib import pyplot as plt
 from matplotlib.tri import Triangulation
 import numpy as np
@@ -38,6 +39,8 @@ ax.triplot(t)
 ax.axis("equal")
 ax.set_xlim([-1, 1])
 ax.set_ylim([-1, 1])
+
+Path("docs/fig").mkdir(exist_ok=True)
 fig.savefig("docs/fig/delaunay.svg")
 ```
 
@@ -89,6 +92,7 @@ Then we plot in another task.
 #| creates: docs/fig/self-similar.svg
 #| requires: data/self-similar.npy
 #| collect: figures
+from pathlib import Path
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -96,6 +100,8 @@ data = np.load("data/self-similar.npy")
 fig, ax = plt.subplots()
 ax.plot(*data.T, '.')
 ax.axis("equal")
+
+Path("docs/fig").mkdir(exist_ok=True)
 fig.savefig("docs/fig/self-similar.svg")
 ```
 
