@@ -5,9 +5,24 @@ _tasks:
     - "poetry install"
 
 _message_after_copy: |
-    Your Entangled project has been generated.
+    Your Entangled project has been generated. Run `poetry run mkdocs serve` to get started.
 
 project_name:
     type: str
-    help: What is your project name?
+    help: Project name?
+    default: new-project
+    validator: >-
+        {% if not (project_name | regex_search('^[a-z][a-z0-9\-]+$')) %}
+        project_name must start with a letter, followed one or more letters, digits or dashes all lowercase.
+        {% endif %}
+
+project_title:
+    type: str
+    default: New Project
+    help: Human readable title for your project?
+
+project_author:
+    type: str
+    default: John Doe <j.doe@yahoo.com>
+    help: Project author?
 

@@ -1,3 +1,6 @@
-version="2.0"
-watch_list=["docs/**/*.md"]
+version = "2.0"
+watch_list = ["docs/**/*.md"]
+hooks = ["quarto_attributes", "brei"]
 
+[brei]
+include = [".entangled/tasks.json"]

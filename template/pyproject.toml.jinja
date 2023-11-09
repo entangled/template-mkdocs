@@ -1,18 +1,21 @@
 [tool.poetry]
-name = "entangled-env"
+name = "{{project_name}}"
 version = "0.1.0"
 description = "Virtual env for running entangled and building docs."
-authors = ["Johan Hidding <j.hidding@esciencecenter.nl>"]
-license = "Apache 2"
+authors = ["{{project_author}}"]
+# You may still want to add a license here
+# license = "Apache 2"
 readme = "README.md"
 packages = []
 
 [tool.poetry.dependencies]
-python = "^3.11"
-entangled-cli = "^2.0.0b5"
+python = ">=3.11,<3.13"
+entangled-cli = "^2.0.0"
 mkdocs-entangled-plugin = "^0.3.0"
 mkdocs = "^1.5.2"
 mkdocs-material = "^9.2.6"
+numpy = "^1.26.1"
+matplotlib = "^3.8.1"
 
 [build-system]
 requires = ["poetry-core"]
