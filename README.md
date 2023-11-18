@@ -7,7 +7,7 @@ See [entangled.github.io](https://entangled.github.io) for more information on E
 To use, run
 
 ```
-copier copy gh:entangled/template-mkdocs .
+entangled new mkdocs my-new-project
 ```
 
 Open the README in the generated project for further instructions.

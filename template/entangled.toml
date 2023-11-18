@@ -1,7 +1,3 @@
 version = "2.0"
 watch_list = ["docs/**/*.md"]
 ignore_list = ["**/README.md"]
-hooks = ["quarto_attributes", "brei"]
-
-[brei]
-include = [".entangled/tasks.json"]
