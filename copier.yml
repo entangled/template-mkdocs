@@ -2,7 +2,7 @@ _subdirectory: template
 
 _tasks:
     - "git init"
-    - "poetry install"
+    - "uv sync"
 
 _message_after_copy: |
     Your Entangled project has been generated. Run `poetry run mkdocs serve` to get started.
@@ -25,4 +25,3 @@ project_author:
     type: str
     default: John Doe <j.doe@yahoo.com>
     help: Project author?
-
