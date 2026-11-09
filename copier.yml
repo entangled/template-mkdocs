@@ -21,7 +21,12 @@ project_title:
     default: New Project
     help: Human readable title for your project?
 
-project_author:
+project_author_name:
     type: str
-    default: John Doe <j.doe@yahoo.com>
-    help: Project author?
+    default: John Doe
+    help: Author name?
+
+project_author_email:
+    type: str
+    default: j.doe@yahoo.com
+    help: Author email?
